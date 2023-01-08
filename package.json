@@ -1,24 +1,74 @@
 {
-  "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start"
-  },
-  "dependencies": {
-    "classnames": "^2.3.2",
-    "next": "latest",
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
-    "react-query": "^3.39.2"
-  },
-  "devDependencies": {
-    "@types/node": "18.11.3",
-    "@types/react": "18.0.21",
-    "@types/react-dom": "18.0.6",
-    "autoprefixer": "^10.4.12",
-    "postcss": "^8.4.18",
-    "tailwindcss": "^3.2.4",
-    "typescript": "4.9.4"
-  }
+	"name": "client",
+	"version": "0.1.0",
+	"private": true,
+	"description": "---",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/OddEer0/portfolio.git"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/OddEer0/portfolio.git/issues"
+	},
+	"homepage": "https://github.com/OddEer0/portfolio.git#readme",
+	"scripts": {
+		"dev": "next dev",
+		"build": "next build",
+		"start": "next start",
+		"prettier": "prettier --check src/**/*{.css,.pcss}",
+		"prettier:fix": "prettier --write src/**/*{.css,.pcss}",
+		"lint": "eslint ./src/**/*.ts",
+		"lint:fix": "eslint ./**/*.ts --fix",
+		"storybook": "start-storybook -p 6006",
+		"build-storybook": "build-storybook"
+	},
+	"dependencies": {
+		"@reduxjs/toolkit": "^1.9.1",
+		"classnames": "^2.3.2",
+		"framer-motion": "^8.2.4",
+		"next": "13.0.7",
+		"next-redux-wrapper": "^8.1.0",
+		"overlayscrollbars": "^2.0.3",
+		"react": "18.2.0",
+		"react-dom": "18.2.0",
+		"react-hook-form": "^7.41.5",
+		"react-query": "^3.39.2",
+		"react-redux": "^8.0.5",
+		"react-swipeable": "^7.0.0",
+		"typescript": "4.9.4"
+	},
+	"devDependencies": {
+		"@babel/core": "7.20.12",
+		"@mdx-js/react": "2.2.1",
+		"@storybook/addon-actions": "^6.5.15",
+		"@storybook/addon-essentials": "^6.5.15",
+		"@storybook/addon-interactions": "^6.5.15",
+		"@storybook/addon-links": "^6.5.15",
+		"@storybook/builder-webpack5": "^6.5.15",
+		"@storybook/manager-webpack5": "^6.5.15",
+		"@storybook/react": "^6.5.15",
+		"@storybook/testing-library": "^0.0.13",
+		"@trivago/prettier-plugin-sort-imports": "4.0.0",
+		"@types/node": "18.11.3",
+		"@types/react": "18.0.21",
+		"@types/react-dom": "18.0.6",
+		"@typescript-eslint/eslint-plugin": "5.48.0",
+		"@typescript-eslint/parser": "5.48.0",
+		"autoprefixer": "^10.4.12",
+		"eslint": "^8.31.0",
+		"eslint-config-prettier": "^8.6.0",
+		"eslint-import-resolver-typescript": "^3.5.2",
+		"eslint-plugin-prettier": "^4.2.1",
+		"eslint-plugin-react": "^7.31.11",
+		"eslint-plugin-storybook": "0.6.8",
+		"postcss": "^8.4.18",
+		"postcss-loader": "7.0.2",
+		"prettier": "^2.8.2",
+		"sass": "^1.57.1",
+		"sass-loader": "^13.2.0",
+		"tailwindcss": "^3.2.4"
+	}
 }

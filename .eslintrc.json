@@ -1,0 +1,42 @@
+{
+	"extends": [
+		"plugin:@typescript-eslint/recommended",
+		"next",
+		"next/core-web-vitals",
+		"plugin:react-hooks/recommended"
+	],
+	"parser": "@typescript-eslint/parser",
+	"parserOptions": {
+		"ecmaFeatures": {
+			"jsx": true
+		},
+		"ecmaVersion": 12,
+		"sourceType": "module"
+	},
+	"plugins": ["@typescript-eslint"],
+	"rules": {
+		"block-scoped-var": "error",
+		"eqeqeq": "error",
+		"no-var": "error",
+		"prefer-const": "error",
+		"eol-last": "error",
+		"no-console": "warn",
+		"prefer-arrow-callback": "error",
+		"no-trailing-spaces": "error",
+		"@typescript-eslint/indent": "off",
+		"@typescript-eslint/comma-dangle": "off",
+		"@typescript-eslint/lines-between-class-members": "off",
+		"quotes": ["warn", "single", { "avoidEscape": true }],
+		"no-restricted-properties": [
+			"error",
+			{
+				"object": "describe",
+				"property": "only"
+			},
+			{
+				"object": "it",
+				"property": "only"
+			}
+		]
+	}
+}
